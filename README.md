@@ -8,11 +8,13 @@
 This repository was made for fun and to develop my best practices.
 The main goals were :
 
-- to be as compatible as possible with **old browsers**n=,
+- to be as compatible as possible with **old browsers**,
   by using only `for` loops and `var` declarations
 - to only use javascript, and **not a html element** 
   that would be  prepared.
   This ensures the thing is portable as possible.
+- to make pretty code 
+  (on this I failed, this is a pure spaghetti plate...)
 
 ### to play
 
