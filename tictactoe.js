@@ -518,10 +518,6 @@
     ui.game.style.fontSize = options.fontSize
     ui.game.style.fontWeight = "bold"
 
-    // to prevent external css problems :
-    ui.game.style.margin = "0"
-    ui.game.style.padding = "0"
-
     function redraw () {
       while(ui.game.firstChild) {
         ui.game.removeChild(ui.game.firstChild)
@@ -546,6 +542,10 @@
           cell.style.color = logicRow[x].w
             ? options.winColor
             : options.frontColor
+
+          // to prevent external css problems :
+          cell.style.margin = "0"
+          cell.style.padding = "0"
 
           cell.appendChild(
             options.document.createTextNode(
