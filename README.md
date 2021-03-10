@@ -28,28 +28,29 @@ If you really want a tic tac toe
 for your users to wait wile you **process their big data**,
 you can embed this game in 3 easy steps :
 
-1- put the 2 scripts files `minigames.js` and `tictactoe.js`
-in a static folder available to the page
+1- put the script file `tictactoe.js`
+in a **static folder available to the page**
 
-2- choose a place where to put the game,
+2- choose an empty html element where to put the game,
 and make sure you can access it easily (with an id is ideal):
 ```html
 <div id="tictactoe"></div>
 ```
 
-3- import the 2 scripts by adding these tags,
+3- import the script by adding these tags,
 and add the game setup as follow,
 preferably at the bottom of your page.
 
 ```html
-<script src="./minigames.js"></script>
 <script src="./tictactoe.js"></script>
+
 <script>
 const game = tictactoe.new(
-  minigames, // this is compulsory
-  document.getElementById("tictactoe"), // your target DOM element
-  {
-    // optional argument with different customization options
+  document.getElementById("tictactoe"),
+  { // OPTIONS
+    //sideSize: 10,
+    //cellWidth: "1em",
+    //cellHeight: "1em"
   }
 )
 </script>
